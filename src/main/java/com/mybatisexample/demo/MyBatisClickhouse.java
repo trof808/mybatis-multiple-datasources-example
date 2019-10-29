@@ -20,9 +20,9 @@ public class MyBatisClickhouse {
     public DataSource dataSourceClickHouse() {
         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
         dataSourceBuilder.driverClassName("ru.yandex.clickhouse.ClickHouseDriver");
-        dataSourceBuilder.url("jdbc:clickhouse://10.36.7.95:8123/default");
-        dataSourceBuilder.username("default");
-        dataSourceBuilder.password("");
+        dataSourceBuilder.url("jdbc:clickhouse://localhost:8123/default");
+        dataSourceBuilder.username("username");
+        dataSourceBuilder.password("pass");
         return dataSourceBuilder.build();
     }
 

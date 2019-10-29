@@ -19,9 +19,9 @@ public class MyBatisConfigPostgres {
     public DataSource dataSource() {
         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
         dataSourceBuilder.driverClassName("org.postgresql.Driver");
-        dataSourceBuilder.url("jdbc:postgresql://10.36.133.161:5432/portal_stat");
-        dataSourceBuilder.username("portal_stat");
-        dataSourceBuilder.password("portal_stat");
+        dataSourceBuilder.url("jdbc:postgresql://localhost:5432/postgres");
+        dataSourceBuilder.username("username");
+        dataSourceBuilder.password("password");
         return dataSourceBuilder.build();
     }
 
