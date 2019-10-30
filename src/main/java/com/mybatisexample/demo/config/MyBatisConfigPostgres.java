@@ -1,4 +1,4 @@
-package com.mybatisexample.demo;
+package com.mybatisexample.demo.config;
 
 import com.mybatisexample.demo.mapper.postgres.TestCaseRunMapper;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -31,31 +31,4 @@ public class MyBatisConfigPostgres {
         factoryBean.setDataSource(dataSource());
         return factoryBean.getObject();
     }
-
-//    @Bean
-//    public TestCaseRunMapper testCaseRunMapper1() throws Exception {
-//        SqlSessionTemplate sqlSessionTemplate = new SqlSessionTemplate(sqlSessionFactory());
-//        return sqlSessionTemplate.getMapper(TestCaseRunMapper.class);
-//    }
-
-//    @Bean
-//    public TestLaunchMapper testLaunchMapper1() throws Exception {
-//        SqlSessionTemplate sqlSessionTemplate = new SqlSessionTemplate(sqlSessionFactory());
-//        return sqlSessionTemplate.getMapper(TestLaunchMapper.class);
-//    }
-
-//    @Bean
-//    public MapperFactoryBean<TestLaunchMapper> testLaunchMapper() throws Exception {
-//        MapperFactoryBean<TestLaunchMapper> factoryBean = new MapperFactoryBean<>(TestLaunchMapper.class);
-//        factoryBean.setSqlSessionFactory(sqlSessionFactory());
-//        return factoryBean;
-//    }
-
-//    @Bean
-//    public MapperScannerConfigurer testLaunchMapper() throws Exception {
-//        MapperScannerConfigurer configurer = new MapperScannerConfigurer();
-//        configurer.setBasePackage("com.mybatisexample.demo.mapper.clickhouse.TestLaunchMapper");
-//        configurer.setSqlSessionFactory(sqlSessionFactory());
-//        return configurer;
-//    }
 }

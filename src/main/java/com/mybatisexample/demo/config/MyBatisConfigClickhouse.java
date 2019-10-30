@@ -1,4 +1,4 @@
-package com.mybatisexample.demo;
+package com.mybatisexample.demo.config;
 
 import com.mybatisexample.demo.mapper.clickhouse.TestLaunchMapper;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -14,7 +14,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @MapperScan(value = "com.mybatisexample.demo.mapper.clickhouse", sqlSessionFactoryRef="sqlSessionClickHouse")
-public class MyBatisClickhouse {
+public class MyBatisConfigClickhouse {
 
     @Bean(name = "dataSourceClickHouse")
     public DataSource dataSourceClickHouse() {
@@ -33,11 +33,4 @@ public class MyBatisClickhouse {
         factoryBean.setDataSource(dataSourceClickHouse());
         return factoryBean.getObject();
     }
-
-//    @Bean
-//    @Primary
-//    public TestLaunchMapper testLaunchMapper1() throws Exception {
-//        SqlSessionTemplate sqlSessionTemplate = new SqlSessionTemplate(sqlSessionFactoryClickHouse());
-//        return sqlSessionTemplate.getMapper(TestLaunchMapper.class);
-//    }
 }
