@@ -1,6 +1,6 @@
 package com.mybatisexample.demo.mapper.postgres;
 
-import com.mybatisexample.demo.TestCaseRun;
+import com.mybatisexample.demo.domain.TestCaseRun;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;

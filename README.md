@@ -21,7 +21,8 @@ src
     │   └── config
     │       ├── MyBatisConfigClickhouse - clickhouse datasource configuration
     │       └── MyBatisConfigPostgres - postgres datasource configuration
-    │   └── mappers
+    │   └── domain - models for database table mappers
+    │   └── mapper
     │       ├── clickhouse - mappers for clickhouse datasource
     │       └── postgres - mappers for postgres datasource
 ```

@@ -1,4 +1,4 @@
-package com.mybatisexample.demo;
+package com.mybatisexample.demo.domain;
 
 import java.sql.Timestamp;
 import java.util.List;

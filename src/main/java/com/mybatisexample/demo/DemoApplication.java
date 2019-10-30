@@ -1,5 +1,7 @@
 package com.mybatisexample.demo;
 
+import com.mybatisexample.demo.domain.TestCaseRun;
+import com.mybatisexample.demo.domain.TestLaunch;
 import com.mybatisexample.demo.mapper.postgres.TestCaseRunMapper;
 import com.mybatisexample.demo.mapper.clickhouse.TestLaunchMapper;
 import org.springframework.boot.CommandLineRunner;
