@@ -13,7 +13,7 @@ testImplementation('org.springframework.boot:spring-boot-starter-test') {
 compile group: 'ru.yandex.clickhouse', name: 'clickhouse-jdbc', version: '0.1.54'
 ```
 
-### Datasource configuration class
+### Folder structure
 
 ```
 src
@@ -25,6 +25,8 @@ src
     │       ├── clickhouse - mappers for clickhouse datasource
     │       └── postgres - mappers for postgres datasource
 ```
+
+### Datasource configuration class
 
 ```java
 @Configuration
